@@ -27,7 +27,7 @@ npm i
     + webpack-dev-server
     + 热启动 hot-load-module 
 
-## 6. 目录规范 ##
+## 3. 目录规范 ##
 
     ├── src
 	│   ├── actions
@@ -69,6 +69,6 @@ npm i
 	├── webpack_production_config.js  //  webpack编译上线代码的配置文件
 	└── package.json
 
-## 7. 说明  ##
+## 4. 说明  ##
 
 	目前还有部分功能尚未完善，比如scss引入。因主要是写框架，所以页面只写了2个简单的input，举例说明用React+Redux+Immutable框架的数据流转。关于webpack升级2.0，官方有详细的文档，可按照官方文档升级，一些注意的细节（坑）后续有时间再整理出来，另外tree-shaking功能还在测试中，欢迎一起交流学习~
