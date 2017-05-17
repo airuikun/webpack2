@@ -57,16 +57,16 @@ npm i
 	│   ├── store				// store配置
 	│   │   └── index.js
 	│   │   └── ...
-	│   └── index.js			//	入口
+	│   └── index.js			//  入口
 	├── node-modules
-	├── dist					//	打包目录
-	├── test					//	测试
+	├── dist				//  打包目录
+	├── test				//  测试
 	│   ├── tabs.test.js
 	│   └── ...
-	├── .babelrc				//	babel配置
-	├── .gitignore              //	git的路径文件忽略
-	├── webpack_dev_config.js   //	webpack本地调试的配置文件
-	├── webpack_production_config.js  //  webpack编译上线代码的配置文件
+	├── .babelrc				//  babel配置
+	├── .gitignore              		//  git的路径文件忽略
+	├── webpack_dev_config.js   		//  webpack本地调试的配置文件
+	├── webpack_production_config.js  	//  webpack编译上线代码的配置文件
 	└── package.json
 
 ## 4. 说明  ##
