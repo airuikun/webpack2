@@ -74,15 +74,13 @@ npm install
 	目前还有部分功能尚未完善，比如scss引入。因主要是写框架，所以页面只写了2个简单的input，举例说明用React+Redux+Immutable框架的数据流转。关于webpack升级2.0，官方有详细的文档，可按照官方文档升级，一些注意的细节（坑）后续更新，另外tree-shaking功能还在测试中，欢迎一起交流学习~
 	
 + 依赖升级
-	+需要将node升级到最新的LTS版本。升级react,babel相应版本。
-	+export语法规范问题，升级后
-	+注意：从 react 15.5.0，React.PropTypes and React.createClass开始使用自己的安装包（详情可见console里面的warning）
-	```
-	Warning: Accessing PropTypes via the main React package is deprecated. Use the prop-types package from npm instead.
-	Warning: RouterContext: React.createClass is deprecated and will be removed in version 16. Use plain JavaScript classes instead. If you're not yet ready to migrate, create-react-class is available on npm as a drop-in replacement.
-	```
-	
-单独安装prop-types和create-react-class，然后修改相应的写法，但因为安装的依赖里面仍有旧式写法，所以会有warning的log，但目前这是兼容的，不影响框架的正常使用，大家可以自己再优化优化~
+        + 需要将node升级到最新的LTS版本。升级react,babel相应版本。
+	+ export语法规范问题，升级后
+	+ 注意：从 react 15.5.0，React.PropTypes and React.createClass开始使用自己的安装包（详情可见console里面的warning）,单独安装prop-types和create-react-class，然后修改相应的写法，但因为安装的依赖里面仍有旧式写法，所以会有warning的log，但目前这是兼容的，不影响框架的正常使用，大家可以自己再优化优化~
+```
+Warning: Accessing PropTypes via the main React package is deprecated. Use the prop-types package from npm instead.
+Warning: RouterContext: React.createClass is deprecated and will be removed in version 16. Use plain JavaScript classes instead. If you're not yet ready to migrate, create-react-class is available on npm as a drop-in replacement.
+```
 ```
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
